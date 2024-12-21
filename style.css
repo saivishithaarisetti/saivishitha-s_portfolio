@@ -630,41 +630,26 @@
     animation: fadeIn 1s ease forwards;
     animation-delay: 1.4s;
   }
-/* Media Queries for Mobile View */
+/* Mobile-Specific Sidebar Behavior */
 @media (max-width: 768px) {
   .sidebar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
+    width: 60px; /* Sidebar remains compact */
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .sidebar ul li a {
+    width: 40px; /* Icon sizes remain compact */
+    height: 40px;
+  }
+
+  .sidebar:hover {
+    width: 60px; /* Prevent expansion on hover */
   }
 
   .main-content {
-    margin: 0;
+    margin-left: 60px; /* Adjust content area for sidebar width */
     padding: 10px;
-  }
-
-  .portfolio-section h2 {
-    font-size: 1.5em;
-  }
-
-  .filter-buttons {
-    gap: 5px;
-  }
-
-  .filter-buttons button {
-    font-size: 0.9em;
-    padding: 8px 10px;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .project-item {
-    width: 100%;
   }
 }
