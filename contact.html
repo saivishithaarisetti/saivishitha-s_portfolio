@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <ul>
+        <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
+        <li><a href="about.html" title="About"><i class="fas fa-user"></i></a></li>
+        <li><a href="skills.html" title="Skills"><i class="fas fa-cogs"></i></a></li>
+        <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-project-diagram"></i></a></li>
+        <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
+        <li><a href="./images/Resume_A.Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
+      </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-card">
+          <h1>Contact Me</h1>
+          <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <input type="hidden" name="access_key" value="aa2550eb-a149-40c9-a928-9d9e92088ec5" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+            <input type="text" name="name" id="name" placeholder="Full Name" required />
+            <input type="email" name="email" id="email" placeholder="Email Address" required />
+            <input type="text" name="phone" id="phone" placeholder="Phone Number" required />
+            <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+            <p class="result" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Projects</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
+      <li><a href="about.html" title="About"><i class="fas fa-user"></i></a></li>
+      <li><a href="skills.html" title="Skills"><i class="fas fa-cogs"></i></a></li>
+      <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-project-diagram"></i></a></li>
+      <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
+      <li><a href="./images/Resume_A.Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section id="portfolio" class="portfolio-section">
+      <h2>My Portfolio</h2>
+
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All Works</button>
+        <button onclick="filterProjects('developing')">Developing Works</button>
+        <button onclick="filterProjects('designing')">Designing Works</button>
+        <button onclick="filterProjects('figma')">Figma Works</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- All Works - Developing Works Example -->
+        <div class="project-item developing">
+          <img src="images/htmlcss.png" alt="Project 1" />
+          <div class="tools-used">Tools: HTML ,CSS</div>
+          <h3>Elixir Prefume</h3>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/prefumewebsite-1.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/prefumewebsite-1/')">Preview</button>
+          </div>
+        </div>
+
+        <div class="project-item developing">
+          <img src="images/js.png" alt="Project 2" />
+          <div class="tools-used">Tools: HTML, CSS, JavaScript</div>
+          <h3>JS Works</h3>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/jsworks-.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/jsworks-/')">Preview</button>
+          </div>
+        </div>
+
+        <!-- All Works - Designing Works Example -->
+        <div class="project-item designing">
+          <img src="images/static.png" alt="Project 3" />
+          <div class="tools-used">Tools: WordPress</div>
+          <h3>ComedySplash</h3>
+          <p>A Static Wordpress site.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://dev-static-wp.pantheonsite.io/')">Preview</button>
+          </div>
+        </div>
+
+        <div class="project-item designing">
+          <img src="images/dynamic.png" alt="Project 4" />
+          <div class="tools-used">Tools: WordPress</div>
+          <h3>Natural Basket</h3>
+          <p>A Dynamic Wordpress site.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://dev-dynamic-ws.pantheonsite.io/')">Preview</button>
+          </div>
+        </div>
+
+        <!-- All Works - Figma Works Example -->
+        <div class="project-item figma">
+          <img src="images/evolve.png" alt="Project 5" />
+          <div class="tools-used">Tools: Figma, Sketch</div>
+          <h3>Evolve</h3>
+          <p>High-fidelity moblie app prototype designed in Figma.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://www.figma.com/proto/dIwLE8hYBy7ba71xa1YmUk/Evolve-moblie?node-id=0-1&t=mlZrc1A8u1FrSg9o-1')">Preview</button>
+          </div>
+        </div>
+
+        <div class="project-item figma">
+          <img src="images/urban.png" alt="Project 6" />
+          <div class="tools-used">Tools: Figma, Sketch</div>
+          <h3>Urban Company</h3>
+          <p>Service-based moblie app prototype designed in Figma.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://www.figma.com/proto/84iJ8rY6A4kgOlySFHGfQz/Urban-Company?t=jJKS2kifNjllkJoD-1')">Preview</button>
+          </div>
+        </div>
+
+        <div class="project-item figma">
+          <img src="images/webapp.png" alt="Project 7" />
+          <div class="tools-used">Tools: Figma, Sketch</div>
+          <h3>Fitness</h3>
+          <p>Web-application prototype designed in Figma.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://www.figma.com/proto/O0YzkJlIAxfw2MPeqxI5R1/Untitled?t=jJKS2kifNjllkJoD-1')">Preview</button>
+          </div>
+        </div>
+
+         <div class="project-item developing">
+          <img src="images/Agrosol.png" alt="Project 8" />
+          <div class="tools-used">Tools: HTML, CSS</div>
+          <h3>AgroSol</h3>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/agriculture.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/agriculture/')">Preview</button>
+          </div>
+        </div>
+       
+
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // JavaScript Function to Filter Projects
+    function filterProjects(category) {
+      const allProjects = document.querySelectorAll('.project-item');
+
+      allProjects.forEach((project) => {
+        // Show all projects if category is 'all'
+        if (category === 'all') {
+          project.classList.remove('hidden');
+        } else {
+          // Otherwise, only show projects that match the selected category
+          if (project.classList.contains(category)) {
+            project.classList.remove('hidden');
+          } else {
+            project.classList.add('hidden');
+          }
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
