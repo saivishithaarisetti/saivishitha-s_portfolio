@@ -17,9 +17,23 @@
       <li><a href="skills.html" title="Skills"><i class="fas fa-cogs"></i></a></li>
       <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-project-diagram"></i></a></li>
       <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
-      <li><a href="./images/Resume_A.Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
+      <li><a href="./images/Resume_Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
     </ul>
   </div>
+  <script>
+    // Get the current page URL
+    const currentPageUrl = window.location.href;
+
+    // Get all the sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+
+    // Loop through each link and check if it matches the current page URL
+    sidebarLinks.forEach(link => {
+        if (link.href === currentPageUrl) {
+            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+        }
+    });
+</script>
 
   <!-- Main Content -->
   <div class="main-content">
@@ -42,6 +56,7 @@
           <img src="images/htmlcss.png" alt="Project 1" />
           <div class="tools-used">Tools: HTML ,CSS</div>
           <h3>Elixir Prefume</h3>
+          <p>A website which descrides about the origin and formulae of the prefume.</p>
           <div class="project-buttons">
             <button onclick="window.open('https://github.com/saivishithaarisetti/prefumewebsite-1.git')">Source Code</button>
             <button onclick="window.open('https://saivishithaarisetti.github.io/prefumewebsite-1/')">Preview</button>
@@ -52,15 +67,38 @@
           <img src="images/js.png" alt="Project 2" />
           <div class="tools-used">Tools: HTML, CSS, JavaScript</div>
           <h3>JS Works</h3>
+          <p>Which performs three functionalities with different domains.</p>
           <div class="project-buttons">
             <button onclick="window.open('https://github.com/saivishithaarisetti/jsworks-.git')">Source Code</button>
             <button onclick="window.open('https://saivishithaarisetti.github.io/jsworks-/')">Preview</button>
           </div>
         </div>
 
+        <div class="project-item developing">
+          <img src="images/rice market.png" alt="Project 3" />
+          <div class="tools-used">Tools: JavaScript, ReactJS</div>
+          <h3>Rice Market</h3>
+          <p>An add to cart web application which sells rice.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/rice_selling.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/rice_selling/')">Preview</button>
+          </div>
+        </div>
+
+        <div class="project-item developing">
+          <img src="images/Agrosol.png" alt="Project 4" />
+          <div class="tools-used">Tools: HTML, CSS</div>
+          <h3>AgroSol</h3>
+          <p>Website which describes the sustainable methods of agriculture</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/agriculture.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/agriculture/')">Preview</button>
+          </div>
+        </div>
+
         <!-- All Works - Designing Works Example -->
         <div class="project-item designing">
-          <img src="images/static.png" alt="Project 3" />
+          <img src="images/static.png" alt="Project 5" />
           <div class="tools-used">Tools: WordPress</div>
           <h3>ComedySplash</h3>
           <p>A Static Wordpress site.</p>
@@ -70,7 +108,7 @@
         </div>
 
         <div class="project-item designing">
-          <img src="images/dynamic.png" alt="Project 4" />
+          <img src="images/dynamic.png" alt="Project 6" />
           <div class="tools-used">Tools: WordPress</div>
           <h3>Natural Basket</h3>
           <p>A Dynamic Wordpress site.</p>
@@ -81,7 +119,7 @@
 
         <!-- All Works - Figma Works Example -->
         <div class="project-item figma">
-          <img src="images/evolve.png" alt="Project 5" />
+          <img src="images/evolve.png" alt="Project 7" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Evolve</h3>
           <p>High-fidelity moblie app prototype designed in Figma.</p>
@@ -91,7 +129,7 @@
         </div>
 
         <div class="project-item figma">
-          <img src="images/urban.png" alt="Project 6" />
+          <img src="images/urban.png" alt="Project 8" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Urban Company</h3>
           <p>Service-based moblie app prototype designed in Figma.</p>
@@ -101,7 +139,7 @@
         </div>
 
         <div class="project-item figma">
-          <img src="images/webapp.png" alt="Project 7" />
+          <img src="images/webapp.png" alt="Project 9" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Fitness</h3>
           <p>Web-application prototype designed in Figma.</p>
@@ -110,19 +148,9 @@
           </div>
         </div>
 
-         <div class="project-item developing">
-          <img src="images/Agrosol.png" alt="Project 8" />
-          <div class="tools-used">Tools: HTML, CSS</div>
-          <h3>AgroSol</h3>
-          <p>Website which describes the sustainable methods of agriculture</p>
-          <div class="project-buttons">
-            <button onclick="window.open('https://github.com/saivishithaarisetti/agriculture.git')">Source Code</button>
-            <button onclick="window.open('https://saivishithaarisetti.github.io/agriculture/')">Preview</button>
-          </div>
-        </div>
 
         <div class="project-item figma">
-          <img src="images/Revuteai.png" alt="Project 9" />
+          <img src="images/Revuteai.png" alt="Project 10" />
           <div class="tools-used">Tools: Figma</div>
           <h3>RevuteAI</h3>
           <p>A Learning Platform which using AI for sales annd maketing skills.</p>
@@ -156,6 +184,8 @@
       });
     }
   </script>
+
+<script src="main.js"></script>
 
 </body>
 </html>

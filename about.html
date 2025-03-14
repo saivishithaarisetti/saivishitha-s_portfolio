@@ -17,44 +17,61 @@
         <li><a href="skills.html" title="Skills"><i class="fas fa-cogs"></i></a></li>
         <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-project-diagram"></i></a></li>
         <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="./images/Resume_A.Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
+        <li><a href="./images/Resume_Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
     </ul>
   </div>
+  <script>
+    // Get the current page URL
+    const currentPageUrl = window.location.href;
+
+    // Get all the sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+
+    // Loop through each link and check if it matches the current page URL
+    sidebarLinks.forEach(link => {
+        if (link.href === currentPageUrl) {
+            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+        }
+    });
+</script>
 
   <!-- Main Content -->
   <div class="main-content">
     <section id="about" class="about-section">
       <h2>About Me</h2>
+      <div class="about-container">
+        <!-- Profile Introduction Section -->
+        <div class="profile-intro">
+          <h3>Professional Profile</h3>
+          <p>Hello! I’m A. Sai Vishitha, a fresh and enthusiastic UI/UX Designer and Developer passionate about building intuitive, impactful user interfaces. Certified in UI/UX Development and Design, I bring a blend of creativity and technical skills. Eager to contribute and grow within a forward-thinking team, I am equipped to help craft memorable digital experiences for users.</p>
+        </div>
       
-      <!-- Profile Introduction Section -->
-      <div class="profile-intro">
-        <h3>Professional Profile</h3>
-        <p>Hello! I’m A. Sai Vishitha, a fresh and enthusiastic UI/UX Designer and Developer passionate about building intuitive, impactful user interfaces. Certified in UI/UX Development and Design, I bring a blend of creativity and technical skills. Eager to contribute and grow within a forward-thinking team, I am equipped to help craft memorable digital experiences for users.</p>
-      </div>
+        <!-- Certifications Section -->
+        <div class="certifications">
+          <h3>Certifications</h3>
+          <ul class="certification-list">
+            <li>
+              <span>UI/UX Development & Design</span> Tech Mahindra SMART Academy, Visakhapatnam
+              <img src="images/TechM-certificate.png" alt="UI/UX Certification">
+            </li>
+          </ul>
+        </div>
       
-      <!-- Certifications Section -->
-      <div class="certifications">
-        <h3>Certifications</h3>
-        <ul class="certification-list">
-          <li>
-            <span>UI/UX Development & Design</span> Tech Mahindra SMART Academy, Visakhapatnam
-            <img src="images/TechM-certificate.png" alt="UI/UX Certification">
-          </li>
-        </ul>
-      </div>
-      
-      <!-- Education Section -->
-      <div class="education">
-        <h3>Education</h3>
-        <ul class="education-list">
-          <li>
-            <span>B.Tech in Electronics and Communication Engineering</span>
-            GMR Institute of Technology, 2020-2024
-          </li>
-        </ul>
+        <!-- Education Section -->
+        <div class="education">
+          <h3>Education</h3>
+          <ul class="education-list">
+            <li>
+              <span>B.Tech in Electronics and Communication Engineering</span>
+              GMR Institute of Technology, 2020-2024
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
+
+  <script src="main.js"></script>
 
 </body>
 </html>

@@ -26,9 +26,23 @@
       <li><a href="skills.html" title="Skills"><i class="fas fa-cogs"></i></a></li>
       <li><a href="portfolio.html" title="Portfolio"><i class="fas fa-project-diagram"></i></a></li>
       <li><a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a></li>
-      <li><a href="./images/Resume_A.Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
+      <li><a href="./images/Resume_Sai Vishitha.pdf" download target="_blank" class="download-btn" title="Download Resume"><i class="fas fa-download"></i></a></li>
     </ul>
   </div>
+  <script>
+    // Get the current page URL
+    const currentPageUrl = window.location.href;
+
+    // Get all the sidebar links
+    const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+
+    // Loop through each link and check if it matches the current page URL
+    sidebarLinks.forEach(link => {
+        if (link.href === currentPageUrl) {
+            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+        }
+    });
+</script>
 
   <!-- Main Content -->
   <div class="main-content">
@@ -46,7 +60,7 @@
       <div class="home-content">
         <h1>A.Sai Vishitha</h1>
         <h6>I'm a <span class="role-text" id="role">UI/UX Developer</span></h6>
-        <p>I'm a passionate UI/UX Developer and Designer dedicated to crafting seamless digital experiences. With a focus on user-centered design and interactive functionality, I help turn ideas into visually engaging, user-friendly applications. Let’s work together to create something amazing!</p>
+        <p>A passionate UI/UX Developer and Designer dedicated to crafting seamless digital experiences. With a focus on user-centered design and interactive functionality, I help turn ideas into visually engaging, user-friendly applications. Let’s work together to create something amazing!</p>
         <a href="contact.html" class="contact-btn">Contact Me</a>
       </div>
     </section>
@@ -64,6 +78,8 @@
       roleElement.textContent = roles[currentRoleIndex];
     }, 3000);  // Change every 3 seconds
   </script>
+
+<script src="main.js"></script>
 
 </body>
 </html>
