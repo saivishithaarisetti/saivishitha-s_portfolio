@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
+  
   <div class="sidebar">
     <ul>
         <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
@@ -21,32 +21,27 @@
     </ul>
   </div>
   <script>
-    // Get the current page URL
     const currentPageUrl = window.location.href;
-
-    // Get all the sidebar links
     const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
 
-    // Loop through each link and check if it matches the current page URL
     sidebarLinks.forEach(link => {
         if (link.href === currentPageUrl) {
-            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+            link.parentElement.classList.add('active'); 
         }
     });
 </script>
 
-  <!-- Main Content -->
   <div class="main-content">
     <section id="about" class="about-section">
       <h2>About Me</h2>
       <div class="about-container">
-        <!-- Profile Introduction Section -->
+        
         <div class="profile-intro">
           <h3>Professional Profile</h3>
           <p>Hello! I’m A. Sai Vishitha, a fresh and enthusiastic UI/UX Developer and Designer passionate about building intuitive, impactful user interfaces. Certified in UI/UX Development and Design, I bring a blend of creativity and technical skills. Eager to contribute and grow within a forward-thinking team, I am equipped to help craft memorable digital experiences for users.</p>
         </div>
       
-        <!-- Certifications Section -->
+        
         <div class="certifications">
           <h3>Certifications</h3>
           <ul class="certification-list">
@@ -57,7 +52,7 @@
           </ul>
         </div>
       
-        <!-- Education Section -->
+        
         <div class="education">
           <h3>Education</h3>
           <ul class="education-list">

@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
+  
   <div class="sidebar">
     <ul>
       <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
@@ -21,26 +21,23 @@
     </ul>
   </div>
   <script>
-    // Get the current page URL
+
     const currentPageUrl = window.location.href;
 
-    // Get all the sidebar links
     const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
 
-    // Loop through each link and check if it matches the current page URL
     sidebarLinks.forEach(link => {
         if (link.href === currentPageUrl) {
-            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+            link.parentElement.classList.add('active'); 
         }
     });
 </script>
 
-  <!-- Main Content -->
   <div class="main-content">
     <section id="portfolio" class="portfolio-section">
       <h2>My Portfolio</h2>
 
-      <!-- Filter Buttons -->
+      
       <div class="filter-buttons">
         <button onclick="filterProjects('all')">All Works</button>
         <button onclick="filterProjects('developing')">Developing Works</button>
@@ -48,7 +45,7 @@
         <button onclick="filterProjects('figma')">Figma Works</button>
       </div>
 
-      <!-- Projects Grid -->
+      
       <div class="projects-grid">
         
         <!-- All Works - Developing Works Example -->
@@ -96,9 +93,20 @@
           </div>
         </div>
 
+        <div class="project-item developing">
+          <img src="images/school.png" alt="Project 5" />
+          <div class="tools-used">Tools: HTML, CSS, JavaScript, ReactJS</div>
+          <h3>School Managnment System</h3>
+          <p>Website which manages the all the school requirments and give information.</p>
+          <div class="project-buttons">
+            <button onclick="window.open('https://github.com/saivishithaarisetti/myapp.git')">Source Code</button>
+            <button onclick="window.open('https://saivishithaarisetti.github.io/myapp/')">Preview</button>
+          </div>
+        </div>
+
         <!-- All Works - Designing Works Example -->
         <div class="project-item designing">
-          <img src="images/static.png" alt="Project 5" />
+          <img src="images/static.png" alt="Project 6" />
           <div class="tools-used">Tools: WordPress</div>
           <h3>ComedySplash</h3>
           <p>A Static Wordpress site.</p>
@@ -108,7 +116,7 @@
         </div>
 
         <div class="project-item designing">
-          <img src="images/dynamic.png" alt="Project 6" />
+          <img src="images/dynamic.png" alt="Project 7" />
           <div class="tools-used">Tools: WordPress</div>
           <h3>Natural Basket</h3>
           <p>A Dynamic Wordpress site.</p>
@@ -119,7 +127,7 @@
 
         <!-- All Works - Figma Works Example -->
         <div class="project-item figma">
-          <img src="images/evolve.png" alt="Project 7" />
+          <img src="images/evolve.png" alt="Project 8" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Evolve</h3>
           <p>High-fidelity moblie app prototype designed in Figma.</p>
@@ -129,7 +137,7 @@
         </div>
 
         <div class="project-item figma">
-          <img src="images/urban.png" alt="Project 8" />
+          <img src="images/urban.png" alt="Project 9" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Urban Company</h3>
           <p>Service-based moblie app prototype designed in Figma.</p>
@@ -139,7 +147,7 @@
         </div>
 
         <div class="project-item figma">
-          <img src="images/webapp.png" alt="Project 9" />
+          <img src="images/webapp.png" alt="Project 10" />
           <div class="tools-used">Tools: Figma, Sketch</div>
           <h3>Fitness</h3>
           <p>Web-application prototype designed in Figma.</p>
@@ -150,7 +158,7 @@
 
 
         <div class="project-item figma">
-          <img src="images/Revuteai.png" alt="Project 10" />
+          <img src="images/Revuteai.png" alt="Project 11" />
           <div class="tools-used">Tools: Figma</div>
           <h3>RevuteAI</h3>
           <p>A Learning Platform which using AI for sales annd maketing skills.</p>

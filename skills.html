@@ -9,7 +9,7 @@
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
+ 
   <div class="sidebar">
     <ul>
         <li><a href="index.html" title="Home"><i class="fas fa-home"></i></a></li>
@@ -21,27 +21,26 @@
     </ul>
   </div>
   <script>
-    // Get the current page URL
+
     const currentPageUrl = window.location.href;
 
-    // Get all the sidebar links
+
     const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
 
-    // Loop through each link and check if it matches the current page URL
+
     sidebarLinks.forEach(link => {
         if (link.href === currentPageUrl) {
-            link.parentElement.classList.add('active'); // Add 'active' class to the parent <li>
+            link.parentElement.classList.add('active'); 
         }
     });
 </script>
 
-  <!-- Main Content -->
+
   <div class="main-content">
     <section id="skills" class="skills-section">
       <h2>My Skills</h2>
       <div class="skills-container">
         
-        <!-- Technical Skills Section -->
         <div class="technical-skills">
           <h3>Technical Skills</h3>
           <div class="skills-grid">
@@ -103,7 +102,7 @@
           </div>
         </div>
 
-        <!-- Soft Skills Section -->
+
         <div class="soft-skills">
           <h3>Soft Skills</h3>
           <ul>
